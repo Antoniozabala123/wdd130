@@ -4,9 +4,26 @@
     box-shadow: 0 0 30px #800000;
 }
 
+nav {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+nav a {
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+main {
+    max-width: 840px;
+}
+
 p {
     padding: 0;
 }
+
+h1 {}
 
 aside {
     width: 20em;
@@ -34,19 +51,4 @@ main img {
     border: 1px solid #ccc;
     padding: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-nav a {
-    color: #333;
-    padding: 10px;
-    display: block;
-}
-
-main {
-    max-width: 840px;
 }
