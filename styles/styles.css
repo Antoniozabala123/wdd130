@@ -1,7 +1,7 @@
 * {
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px #800000;
+    border: 0px solid steelblue;
+    padding: 0px;
+    box-shadow: 0 0 20px #800000;
 }
 
 nav {
@@ -17,13 +17,22 @@ nav a {
 
 main {
     max-width: 840px;
+    margin: 0 auto;
+
 }
 
-p {
+h1 {
+    color: #2c3e50;
+    margin: 10px;
+    text-align: center;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
     padding: 0;
 }
-
-h1 {}
 
 aside {
     width: 20em;
@@ -40,15 +49,12 @@ aside img {
     height: auto;
 }
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+p {
+    padding: 0;
 }
 
-main img {
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+footer {
+    margin-top: 50px;
+    border-top: 2px solid #333;
+    text-align: center;
 }
