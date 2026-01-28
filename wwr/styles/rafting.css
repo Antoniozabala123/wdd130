@@ -40,3 +40,8 @@ article {
 .socialmedia a {
     text-decoration: none;
 }
+
+.hero {
+    position: absolute;
+    /* Para contener elementos hijos absolutos */
+}
