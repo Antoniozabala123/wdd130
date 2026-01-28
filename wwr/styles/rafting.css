@@ -52,7 +52,7 @@ article {
 
 /* Paso 8: Hero Div con Overlays */
 .hero {
-    position: absolute;
+    position: relative;
     /* Para contener elementos hijos absolutos */
 }
 
