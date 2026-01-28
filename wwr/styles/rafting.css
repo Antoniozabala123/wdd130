@@ -82,7 +82,7 @@ h1 {
     bottom: 40px;
     left: 0;
     right: 0;
-    background: rgba(3, 28, 250, 0.8);
+    background: rgba(14, 15, 15, 0.8);
     margin: 0 20px;
     padding: 20px;
     border-radius: 8px;
@@ -137,7 +137,7 @@ footer {
 
 /* Estilo para secciones de contenido */
 section {
-    background-color: #1a0aaa;
+    background-color: #eae9ee;
     border-radius: 8px;
     margin-bottom: 20px;
 }
