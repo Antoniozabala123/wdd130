@@ -7,7 +7,7 @@
 :root {
     --primary-color: #055a05;
     /* forest green */
-    --secondary-color: #f4a261;
+    --secondary-color: #617cf4;
     /* warm sand */
     --accent1-color: #264653;
     /* dark slate blue */
@@ -22,20 +22,26 @@ body {
     /* Usa Arial, Helvetica... */
 }
 
-h1,
-h2,
-{
-font-family: var(--heading-font);
-/* Usa Times New Roman... */
-}
-
 header {
     background-color: var(--primary-color);
     /* El verde oscuro #055a05 */
-    color: white;
+    color: #ffffff;
 }
 
-.adventure-button {
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.hero {
     background-color: var(--secondary-color);
     /* El naranja #f4a261 */
     color: var(--accent1-color);
