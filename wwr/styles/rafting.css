@@ -3,8 +3,10 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "time new roman", "Georgia", serif;
-    --body-font: Ariel, Helvetica, sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    /* Corregido 'Times' */
+    --body-font: Arial, Helvetica, sans-serif;
+    /* Corregido 'Arial' */
 }
 
 * {
@@ -23,61 +25,89 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-    border: 1px solid #cccccc;
-    background-color: #ee9e09;
-    clear: both;
 }
 
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-
 }
 
+/* Corregido: margin ahora tiene 'px' */
 nav,
 p,
 section,
 article {
     margin: 16px;
-    padding: 8px;
+    padding: 0px;
 }
 
 .socialmedia a {
     text-decoration: none;
 }
 
+/* Corregido: Se añadió el punto '.' para la clase hero */
 .hero {
     position: relative;
+    /* Marco de referencia para los elementos absolutos */
+    margin: 0 auto;
 }
 
 .hero img {
     display: block;
+    /* Elimina espacio extra debajo de la imagen */
     width: 100%;
     height: auto;
 }
 
-h1 {
+/* El título sobre la imagen */
+.hero h1 {
     position: absolute;
-    top: 20px;
+    top: 0px;
+    /* Separación desde la parte superior */
+    left: 0;
     width: 100%;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: var(--accent1-color);
     color: #fff;
 }
 
-.her article img {
+/* El cuadro de la misión sobre la imagen - AJUSTADO */
+.hero article {
+    position: absolute;
+    top: 100px;
+    /* Bajado para que no tape el título */
+    left: 100px;
+    right: 100px;
+    background-color: rgba(233, 196, 106, 0.9);
+    border: 1px solid var(--accent1-color);
+    padding: 20px;
     float: right;
-    width: 125px;
-    margin-left: 15px;
+    margin: 0 0 15px 15px;
+    border: 1px solid rgba(0 0 0 / .3);
+    box-shadow: 0 0 30px #777;
 }
 
-h2 {
-    background-color: var(--accent1-color);
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
+/* Imagen flotante dentro del artículo */
+.hero article img {
+    float: right;
+    /* Alineación a la derecha */
+    width: 125px;
+    /* Tamaño controlado para evitar que se vea muy grande */
+    margin-left: 15px;
+    border: 2px solid white;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+main {
+    width: 75vw;
+    margin: 1rem auto;
+    background-color: #eee;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / .1);
 }
