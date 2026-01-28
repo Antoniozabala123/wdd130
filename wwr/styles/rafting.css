@@ -19,7 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #fcfcfc;
+    background-color: #1707f3;
 }
 
 /* Paso 4: Limitar ancho de página y centrar */
@@ -73,7 +73,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #3440ec;
 }
 
 /* Paso 11: Estilo del article sobre la imagen */
@@ -82,7 +82,7 @@ h1 {
     bottom: 40px;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(212, 141, 8, 0.8);
     margin: 0 20px;
     padding: 20px;
     border-radius: 8px;
@@ -106,7 +106,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: rgb(25, 79, 196);
     text-decoration: none;
     margin: 0 10px;
     padding: 8px 16px;
@@ -121,7 +121,7 @@ nav a:hover {
 /* Estilo para el footer */
 footer {
     background-color: var(--accent1-color);
-    color: white;
+    color: rgb(172, 22, 22);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -137,14 +137,14 @@ footer {
 
 /* Estilo para secciones de contenido */
 section {
-    background-color: #f8f9fa;
+    background-color: #2c8888;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 /* Estilo para el artículo de historia */
 article:not(.hero article) {
-    background-color: white;
+    background-color: rgb(15, 22, 109);
     border-left: 4px solid var(--secondary-color);
     padding: 20px;
     margin: 20px 0;
