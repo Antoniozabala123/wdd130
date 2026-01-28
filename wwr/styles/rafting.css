@@ -16,3 +16,33 @@
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
+
+body {
+    font-family: var(--body-font);
+    /* Usa Arial, Helvetica... */
+}
+
+h1,
+h2,
+{
+font-family: var(--heading-font);
+/* Usa Times New Roman... */
+}
+
+header {
+    background-color: var(--primary-color);
+    /* El verde oscuro #055a05 */
+    color: white;
+}
+
+.adventure-button {
+    background-color: var(--secondary-color);
+    /* El naranja #f4a261 */
+    color: var(--accent1-color);
+    /* El azul oscuro #264653 */
+}
+
+footer {
+    border-top: 2px solid var(--accent2-color);
+    /* El amarillo #e9c46a */
+}
