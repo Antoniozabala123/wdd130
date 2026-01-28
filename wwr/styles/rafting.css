@@ -1,9 +1,9 @@
 /* Paso 1: Variables CSS en :root */
 :root {
-    --primary-color: #121412;
-    --secondary-color: #ece4dd;
-    --accent1-color: #d9e1e4;
-    --accent2-color: #161615;
+    --primary-color: #e8f1e8;
+    --secondary-color: #0c0c0c;
+    --accent1-color: #181717;
+    --accent2-color: #e68b14;
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -19,7 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #0a0a0a;
+    background-color: #868282;
 }
 
 /* Paso 4: Limitar ancho de página y centrar */
@@ -73,7 +73,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #070707;
+    color: #ece5e5;
 }
 
 /* Paso 11: Estilo del article sobre la imagen */
@@ -82,11 +82,11 @@ h1 {
     bottom: 40px;
     left: 0;
     right: 0;
-    background: rgba(36, 39, 39, 0.8);
+    background: rgba(78, 71, 71, 0.8);
     margin: 0 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(228, 233, 228, 0.1);
+    box-shadow: 0 4px 6px rgba(26, 25, 25, 0.1);
 }
 
 /* Paso 12: Imagen dentro del artículo */
@@ -106,7 +106,7 @@ nav {
 }
 
 nav a {
-    color: rgba(242, 243, 248, 0.8);
+    color: rgba(194, 195, 201, 0.8);
     text-decoration: none;
     margin: 0 10px;
     padding: 8px 16px;
@@ -121,7 +121,7 @@ nav a:hover {
 /* Estilo para el footer */
 footer {
     background-color: var(--accent1-color);
-    color: rgb(15, 15, 15);
+    color: rgb(247, 244, 244);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -137,14 +137,14 @@ footer {
 
 /* Estilo para secciones de contenido */
 section {
-    background-color: #413e3e;
+    background-color: #575555;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 /* Estilo para el artículo de historia */
 article:not(.hero article) {
-    background-color: rgb(243, 238, 238);
+    background-color: rgb(8, 8, 8);
     border-left: 4px solid var(--secondary-color);
     padding: 20px;
     margin: 20px 0;
