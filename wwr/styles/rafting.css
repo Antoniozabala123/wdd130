@@ -4,51 +4,135 @@
     box-sizing: border-box;
 }
 
+/* Añade esta regla para el contenedor hero */
+.hero {
+    position: relative;
+    /* Esto arregla el primer error */
+}
+
+/* Añade estas reglas para los elementos dentro del hero */
+.hero h1,
+h1 {
+    position: absolute;
+    /* Ajusta también top/left/right según necesites */
+    top: 20px;
+    left: 20px;
+    color: white;
+    /* Para que sea visible sobre la imagen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero article {
+    position: absolute;
+    /* Ajusta la posición según necesites */
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Añade esta regla para la imagen dentro del artículo */
+.hero article img {
+    float: right;
+    margin-left: 15px;
+    /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px;
+    max-width: 40%;
+    /* Controla el tamaño de la imagen */
+}
+
+/* Añade esta regla para los enlaces de redes sociales */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* O si usas selectores diferentes, también puedes: */
+nav a,
+footer a {
+    text-decoration: none;
+}
+
+/* Usa la variable --heading-font que ya definiste en :root */
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+/* O específicamente para los títulos del hero */
+.hero h1 {
+    font-family: var(--heading-font);
+}
+
+/* Variables en :root (ya las tienes) */
 :root {
     --primary-color: #055a05;
-    /* forest green */
     --secondary-color: #617cf4;
-    /* warm sand */
     --accent1-color: #264653;
-    /* dark slate blue */
     --accent2-color: #e9c46a;
-    /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-body {
-    font-family: var(--body-font);
-    /* Usa Arial, Helvetica... */
-}
-
-header {
-    background-color: var(--primary-color);
-    /* El verde oscuro #055a05 */
-    color: #ffffff;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-header,
-main,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
+/* Hero positioning */
 .hero {
-    background-color: var(--secondary-color);
-    /* El naranja #f4a261 */
-    color: var(--accent1-color);
-    /* El azul oscuro #264653 */
+    position: relative;
+    /* Contenedor relativo */
+    width: 100%;
+    overflow: hidden;
 }
 
-footer {
-    border-top: 2px solid var(--accent2-color);
-    /* El amarillo #e9c46a */
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    top: 30px;
+    left: 30px;
+    font-family: var(--heading-font);
+    /* Usando la variable */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2.5em;
+}
+
+.hero article {
+    position: absolute;
+    /* Posicionamiento absoluto */
+    bottom: 40px;
+    left: 30px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: var(--body-font);
+}
+
+.hero article img {
+    float: right;
+    /* Imagen flotando a la derecha */
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Social media links */
+.socialmedia a {
+    text-decoration: none;
+    /* Sin subrayado */
+    color: var(--primary-color);
+    margin: 0 10px;
+}
+
+.socialmedia a:hover {
+    color: var(--accent2-color);
 }
