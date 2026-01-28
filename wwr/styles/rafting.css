@@ -1,9 +1,9 @@
 /* Paso 1: Variables CSS en :root */
 :root {
-    --primary-color: #f3f2f2;
+    --primary-color: #f4f4f4;
     --secondary-color: #181616;
-    --accent1-color: #161515;
-    --accent2-color: #111010;
+    --accent1-color: #9d0a0a;
+    --accent2-color: #2a2a2a;
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
