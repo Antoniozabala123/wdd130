@@ -19,6 +19,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #fcfcfc;
 }
 
 /* Paso 4: Limitar ancho de página y centrar */
@@ -127,7 +128,7 @@ footer {
 }
 
 .socialmedia {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .socialmedia a {
