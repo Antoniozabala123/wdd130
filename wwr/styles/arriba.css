@@ -1,290 +1,162 @@
-/* Variables CSS en :root */
+/* Paso 1: Variables CSS en :root */
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #617cf4;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --primary-color: #131212;
+    --secondary-color: #0e0d0d;
+    --accent1-color: #9d0a0a;
+    --accent2-color: #ecebeb;
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
-    --text-light: #ffffff;
-    --text-dark: #333333;
-    --bg-light: #f8f9fa;
 }
 
-/* Reset y estilos base */
+/* Paso 2: Reset CSS box-model */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Paso 3: Estilo del body */
 body {
     font-family: var(--body-font);
-    line-height: 1.6;
-    color: var(--text-dark);
+    color: var(--accent1-color);
+    background-color: #0a0a0a;
 }
 
-/* Navegación */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    background-color: var(--primary-color);
+/* Paso 4: Limitar ancho de página y centrar */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
-.logo img {
-    height: 50px;
-    width: auto;
+/* Paso 5: Estilo de headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+/* Paso 6: Estilo básico de márgenes y padding */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
-.nav-links a {
-    color: var(--text-light);
+/* Paso 7: Remover subrayado de enlaces sociales */
+.socialmedia a {
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: var(--accent2-color);
-}
-
-/* HERO SECTION - Corrección de los problemas mencionados */
+/* Paso 8: Hero Div con Overlays */
 .hero {
     position: relative;
-    /* Esto arregla el primer error: .hero debe tener position: relative */
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
+    /* Para contener elementos hijos absolutos */
 }
 
+/* Paso 9: Imagen dentro del hero */
 .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: block;
-}
-
-/* Este es el overlay con el título */
-.hero-overlay {
-    position: absolute;
-    /* Esto arregla: elementos hijos con position: absolute */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2rem 4rem;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 800px;
-}
-
-.hero h1 {
-    font-family: var(--heading-font);
-    /* Usando la variable --heading-font */
-    color: var(--text-light);
-    font-size: 3rem;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-/* Contenido principal */
-.content {
-    max-width: 1200px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-}
-
-/* Primer artículo con imagen a la derecha */
-.intro-article {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
-    padding: 2rem;
-    background-color: var(--bg-light);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.article-text {
-    flex: 1;
-}
-
-.article-text h2 {
-    font-family: var(--heading-font);
-    /* Usando la variable --heading-font */
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    font-size: 2.2rem;
-    border-bottom: 3px solid var(--accent2-color);
-    padding-bottom: 0.5rem;
-}
-
-.article-text p {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.article-image {
-    flex: 0 0 300px;
-}
-
-.article-image img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    float: right;
-    /* Esto arregla: imagen con float: right dentro del artículo */
 }
 
-/* Artículo de historia */
-.history-article {
-    background-color: #f0f8ff;
-    padding: 3rem;
-    border-radius: 10px;
-    margin-bottom: 4rem;
-    border-left: 5px solid var(--secondary-color);
-}
-
-.history-article h2 {
-    font-family: var(--heading-font);
-    /* Usando la variable --heading-font */
-    color: var(--accent1-color);
-    margin-bottom: 1.5rem;
-    font-size: 2.2rem;
-}
-
-.history-article p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    max-width: 800px;
-}
-
-/* Sección de llamado a la acción */
-.cta-section {
-    background: linear-gradient(135deg, var(--primary-color), var(--accent1-color));
-    padding: 4rem 2rem;
-    border-radius: 15px;
+/* Paso 10: Estilo del h1 sobre la imagen */
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
     text-align: center;
-    margin: 4rem 0;
+    opacity: 0.9;
+    background-color: var(--accent1-color);
+    color: #ffff;
+
 }
 
-.cta-content h2 {
-    font-family: var(--heading-font);
-    /* Usando la variable --heading-font */
-    color: var(--text-light);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+/* Paso 11: Estilo del article sobre la imagen */
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    background: rgb(224, 227, 230);
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(236, 233, 233, 0.1);
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: var(--accent2-color);
-    color: var(--text-dark);
-    padding: 1rem 3rem;
-    font-size: 1.2rem;
-    font-weight: bold;
+/* Paso 12: Imagen dentro del artículo */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 2px solid var(--primary-color);
+}
+
+/* Estilos adicionales para navegación */
+nav {
+    background-color: var(--primary-color);
+    padding: 16px;
+}
+
+nav a {
+    color: #ebe8e8;
     text-decoration: none;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    padding: 8px 16px;
 }
 
-.cta-button:hover {
-    background-color: #ffd166;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
+    border-radius: 4px;
 }
 
-/* Footer */
+/* Estilo para el footer */
 footer {
     background-color: var(--accent1-color);
-    color: var(--text-light);
-    padding: 2rem;
+    color: rgb(252, 248, 248);
     text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .socialmedia {
-    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.socialmedia p {
-    margin-bottom: 1rem;
-    font-weight: bold;
-}
-
-/* Esto arregla: enlaces de redes sociales sin subrayado */
 .socialmedia a {
     text-decoration: none;
-    /* Sin subrayado en enlaces sociales */
-    margin: 0 10px;
-    display: inline-block;
 }
 
-.socialmedia img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s;
+/* Estilo para secciones de contenido */
+section {
+    background-color: #f3f3f5;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.socialmedia img:hover {
-    transform: scale(1.1);
+/* Estilo para el artículo de historia */
+article:not(.hero article) {
+    background-color: rgb(253, 250, 250);
+    border-left: 4px solid var(--secondary-color);
+    padding: 20px;
+    margin: 20px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        gap: 1rem;
-    }
+/* Estilo para enlaces generales */
+a {
+    color: var(--secondary-color);
+}
 
-    .nav-links a {
-        font-size: 0.9rem;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero-overlay {
-        padding: 1.5rem;
-        width: 95%;
-    }
-
-    .intro-article {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .article-image {
-        flex: 0 0 auto;
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .article-image img {
-        float: none;
-        /* En móvil quitamos el float */
-    }
-
-    .history-article {
-        padding: 2rem;
-    }
-
-    .cta-content h2 {
-        font-size: 2rem;
-    }
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
