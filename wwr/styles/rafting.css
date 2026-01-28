@@ -113,7 +113,7 @@ h2 {
 }
 
 footer {
-    background-color: var(--accent1-color);
+    background-color: var(--accent2-color);
     color: rgb(252, 248, 248);
     text-align: center;
     padding: 20px;
