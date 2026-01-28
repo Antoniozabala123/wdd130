@@ -243,3 +243,48 @@ footer {
 .socialmedia img:hover {
     transform: scale(1.1);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-overlay {
+        padding: 1.5rem;
+        width: 95%;
+    }
+
+    .intro-article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .article-image {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .article-image img {
+        float: none;
+        /* En móvil quitamos el float */
+    }
+
+    .history-article {
+        padding: 2rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
