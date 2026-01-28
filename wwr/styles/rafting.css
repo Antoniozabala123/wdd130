@@ -131,7 +131,7 @@ footer {
 }
 
 .socialmedia a {
-    margin: 0 8px;
+    text-decoration: none;
 }
 
 /* Estilo para secciones de contenido */
