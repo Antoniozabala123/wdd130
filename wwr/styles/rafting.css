@@ -1,6 +1,6 @@
 /* Paso 1: Variables CSS en :root */
 :root {
-    --primary-color: rgba(44, 31, 31, 0.582);
+    --primary-color: rgba(44, 31, 31, 45);
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
