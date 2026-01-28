@@ -3,111 +3,45 @@
     --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    /* Corregido 'Times' */
-    --body-font: Arial, Helvetica, sans-serif;
-    /* Corregido 'Arial' */
+    --heading-font: "Times New Roman", serif;
+    --body-font: Arial, sans-serif;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
-
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-/* Corregido: margin ahora tiene 'px' */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 0px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-/* Corregido: Se añadió el punto '.' para la clase hero */
+/* El Hero debe contener todo */
 .hero {
     position: relative;
-    /* Marco de referencia para los elementos absolutos */
+    max-width: 840px;
     margin: 0 auto;
 }
 
-.hero img {
-    display: block;
-    /* Elimina espacio extra debajo de la imagen */
-    width: 100%;
-    height: auto;
-}
-
-/* El título sobre la imagen */
+/* El título flotante */
 .hero h1 {
     position: absolute;
-    top: 0px;
-    /* Separación desde la parte superior */
+    top: 0;
     left: 0;
     width: 100%;
+    background-color: rgba(38, 70, 83, 0.7);
+    color: white;
+    margin: 0;
     padding: 10px;
-    text-align: center;
-    opacity: 0.8;
-    background-color: var(--accent1-color);
-    color: #fff;
 }
 
-/* El cuadro de la misión sobre la imagen - AJUSTADO */
+/* El cuadro de misión flotante */
 .hero article {
     position: absolute;
     top: 100px;
-    /* Bajado para que no tape el título */
-    left: 100px;
-    right: 100px;
-    background-color: rgba(233, 196, 106, 0.9);
-    border: 1px solid var(--accent1-color);
+    /* Ajusta este valor para bajarlo */
+    left: 50px;
+    right: 50px;
+    background-color: var(--accent2-color);
+    /* VARIABLE EN USO */
+    opacity: 0.9;
     padding: 20px;
-    float: right;
-    margin: 0 0 15px 15px;
-    border: 1px solid rgba(0 0 0 / .3);
-    box-shadow: 0 0 30px #777;
 }
 
-/* Imagen flotante dentro del artículo */
+/* La imagen pequeña a la derecha */
 .hero article img {
     float: right;
-    /* Alineación a la derecha */
-    width: 125px;
-    /* Tamaño controlado para evitar que se vea muy grande */
-    margin-left: 15px;
-    border: 2px solid white;
-}
-
-nav a:hover {
-    color: var(--secondary-color);
-}
-
-main {
-    width: 75vw;
-    margin: 1rem auto;
-    background-color: #eee;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0 / .1);
+    width: 150px;
+    margin-left: 20px;
 }
