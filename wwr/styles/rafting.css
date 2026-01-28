@@ -159,3 +159,8 @@ a:hover {
     color: var(--primary-color);
     text-decoration: underline;
 }
+
+nav {
+    background-color: #2C1F1F;
+
+}
