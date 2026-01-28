@@ -73,7 +73,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #0c0b0a;
+    color: #070707;
 }
 
 /* Paso 11: Estilo del article sobre la imagen */
@@ -82,11 +82,11 @@ h1 {
     bottom: 40px;
     left: 0;
     right: 0;
-    background: rgba(14, 15, 15, 0.8);
+    background: rgba(36, 39, 39, 0.8);
     margin: 0 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(5, 180, 72, 0.1);
+    box-shadow: 0 4px 6px rgba(228, 233, 228, 0.1);
 }
 
 /* Paso 12: Imagen dentro del artículo */
@@ -106,7 +106,7 @@ nav {
 }
 
 nav a {
-    color: rgb(3, 28, 250, 0.8);
+    color: rgba(242, 243, 248, 0.8);
     text-decoration: none;
     margin: 0 10px;
     padding: 8px 16px;
@@ -121,7 +121,7 @@ nav a:hover {
 /* Estilo para el footer */
 footer {
     background-color: var(--accent1-color);
-    color: rgb(19, 20, 20);
+    color: rgb(15, 15, 15);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
@@ -137,14 +137,14 @@ footer {
 
 /* Estilo para secciones de contenido */
 section {
-    background-color: #eae9ee;
+    background-color: #413e3e;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 /* Estilo para el artículo de historia */
 article:not(.hero article) {
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(243, 238, 238);
     border-left: 4px solid var(--secondary-color);
     padding: 20px;
     margin: 20px 0;
