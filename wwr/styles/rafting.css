@@ -17,18 +17,29 @@
     box-sizing: border-box;
 }
 
+/* Paso 3: Estilo del body */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #f4f5f8;
+    background-color: #0a0a0a;
 }
 
+/* Paso 4: Limitar ancho de página y centrar */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Paso 5: Estilo de headings */
 h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
+/* Paso 6: Estilo básico de márgenes y padding */
 nav,
 p,
 section,
@@ -37,32 +48,51 @@ article {
     padding: 8px;
 }
 
+/* Paso 7: Remover subrayado de enlaces sociales */
 .socialmedia a {
     text-decoration: none;
 }
 
+/* Paso 8: Hero Div con Overlays */
 .hero {
-    position: absolute;
+    position: relative;
+    /* Para contener elementos hijos absolutos */
 }
 
+/* Paso 9: Imagen dentro del hero */
 .hero img {
     display: block;
     width: 100%;
     height: auto;
 }
 
+/* Paso 10: Estilo del h1 sobre la imagen */
 h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.9;
     background-color: var(--accent1-color);
-    color: #fff;
+    color: #ffff;
 
 }
 
+/* Paso 11: Estilo del article sobre la imagen */
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    background: rgb(224, 227, 230);
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(236, 233, 233, 0.1);
+}
+
+/* Paso 12: Imagen dentro del artículo */
 .hero article img {
     float: right;
     width: 125px;
@@ -70,9 +100,4 @@ h1 {
     margin-bottom: 10px;
     border-radius: 4px;
     border: 2px solid var(--primary-color);
-}
-
-nav {
-    background-color: var(--primary-color);
-    padding: 16px;
 }
