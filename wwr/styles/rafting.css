@@ -46,6 +46,7 @@ section,
 article {
     margin: 16px;
     padding: 8px;
+    margin: 0;
 }
 
 /* Paso 7: Remover subrayado de enlaces sociales */
@@ -123,4 +124,53 @@ footer {
 nav {
     background-color: var(--primary-color);
     padding: 16px;
+}
+
+.adventures-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adventures-container figure {
+    width: 18%;
+    /* Para que las 5 quepan bien con un pequeño espacio */
+}
+
+header {
+    width: 840px;
+    margin: 0 auto;
+    display: grid;
+    /* Activa el Grid */
+    grid-template-columns: 120px 1fr;
+    /* Columna 1: Logo (120px), Columna 2: Menú (el resto) */
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    /* Activa Flexbox */
+    justify-content: space-around;
+    /* Reparte los enlaces con espacio entre ellos */
+    list-style: none;
+    /* Por si usas etiquetas <ul> y <li> */
+    margin: 0;
+    /* Quitamos el margen de 16px que tenías antes */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+    font-family: var(--body-font);
+}
+
+nav a:hover {
+    color: #050577;
+    /* Un cambio de color cuando pasas el mouse */
+}
+
+.logo {
+    width: 100px;
+    justify-self: center;
 }
