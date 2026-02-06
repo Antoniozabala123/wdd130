@@ -21,7 +21,7 @@
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 /* Paso 4: Limitar ancho de página y centrar */
@@ -75,7 +75,7 @@ h1 {
     text-align: center;
     opacity: 0.9;
     background-color: var(--accent1-color);
-    color: #fafafa;
+    color: var(--secondary-color);
 
 }
 
@@ -94,11 +94,11 @@ h2 {
     bottom: 40px;
     left: 0;
     right: 0;
-    background: rgb(79, 79, 245);
+    background: var(--hero-bg);
     margin: 0 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(22, 22, 22, 0.1);
+    box-shadow: 0 4px 6px #1616161a;
     color: var(--secondary-color);
 }
 
@@ -114,7 +114,7 @@ h2 {
 
 footer {
     background-color: var(--accent2-color);
-    color: rgb(26, 25, 25);
+    color: var(--accent1-color);
     text-align: center;
     padding: 20px;
     margin-top: 20px;
