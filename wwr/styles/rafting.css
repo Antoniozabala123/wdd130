@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #d1c4e9;
+    --primary-color: #eff1ef;
     /* forest green */
-    --secondary-color: #4a148c;
+    --secondary-color: #f1f4f8;
     /* warm sand */
-    --accent1-color: #1c1c1;
+    --accent1-color: #151516;
     /* dark slate blue */
-    --accent2-color: #ffffff;
+    --accent2-color: #faf7f3;
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
