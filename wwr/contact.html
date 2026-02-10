@@ -41,16 +41,21 @@
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" placeholder="name@gmail.com">
       </div>
-      <p>Message Purpose</p>
-      <div class="Send Us a message">
-        <label>General inquiry</label>
-        <input type="radio">
+      <div class="form-group">
+        <p>Message Purpose</p>
 
-        <label>Reservation Question</label>
-        <input type="radio">
+        <label for="general">
+          <input type="radio" id="general" name="purpose" value="general"> General Inquiry
+        </label>
 
-        <label>Website suggestion</label>
-        <input type="radio">
+        <label for="reservation">
+          <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
+          Question
+        </label>
+
+        <label for="suggestion">
+          <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion
+        </label>
       </div>
       <div class="Send us a Message">
         <label for="message">Your Message</label>
