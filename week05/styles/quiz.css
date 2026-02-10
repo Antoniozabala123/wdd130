@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 500px;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1rem;
+    background-color: #fff;
+    color: #080cee;
+}
+
+h1 {
+    margin: .5rem;
+}
