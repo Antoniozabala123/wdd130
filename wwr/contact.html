@@ -12,109 +12,111 @@
 </head>
 
 <body>
-  <header>
-    <img src="images/profle.png" alt="Venezuela Rafting Logo" width="100">
-    <nav>
+  <!-- HEADER CORREGIDO: CSS Grid + Flex -->
+  <header class="site-header">
+    <img src="images/profile.png" alt="Venezuela Rafting Logo" width="120">
+    <nav class="main-nav">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html" class="active">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <h1>Contact Us</h1>
-
-    <div class="contact-grid">
-      <section class="contact-details">
-        <h2>Our Location</h2>
-        <p><strong>Address:</strong> 123 Main River street </p>
-        <p><strong>Phone:</strong> 999-999-9999</p>
-        <p><strong>Email:</strong> <a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
-
-        <div class="map">
+    <!-- COMPANY INFORMATION - EXACTO AL WIREFRAME -->
+    <section class="company-info-section">
+      <h2>White Water Rafting Company</h2>
+      <div class="company-details">
+        <address>
+          <p>123 Main River Street</p>
+          <p>Kolob, California</p>
+          <p>+1 999 999 9999</p>
+          <p>info@whitewater.com</p>
+        </address>
+        <div class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15916.413859902128!2d-66.51948394780453!3d4.200021058489815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de0f0be0cb95009%3A0x6cc08e1798c57ec4!2sYacuaray%207101%2C%20Amazonas!5e0!3m2!1ses!2sve!4v1770749516120!5m2!1ses!2sve"
-            width="600" height="450" allowfullscreen="" loading="lazy">
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
           </iframe>
-
         </div>
-      </section>
-
-      <form class="contact-form">
-
-        <div class="form-item">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Full Name" required>
-        </div>
-
-        <div class="form-item">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="name@example.com" required>
-        </div>
-
-        <fieldset>
-          <legend>Message Purpose</legend>
-          <label for="general">
-            <input type="radio" id="general" name="purpose" value="general"> General Inquiry
-          </label>
-          <label for="reservation">
-            <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
-            Question
-          </label>
-          <label for="suggestion">
-            <input type="radio" id="suggestion" name="purpose" value="suggestion"> Website
-            Suggestion
-          </label>
-        </fieldset>
-
-        <div class="form-item">
-          <label for="message">Your Message</label>
-          <textarea name="message" id="message" rows="5" required></textarea>
-        </div>
-
-        <div class="checkbox-item">
-          <input type="checkbox" id="newsletter" name="newsletter">
-          <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-        </div>
-
-        <button type="submit">Get in Touch</button>
-      </form>
-    </div>
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventures-gallery">
-        <figure>
-          <img src="images/rafting.jpg" alt="rafting adventure banner" width="200">
-          <figcaption>rafting adventure banner</figcaption>
-        </figure>
-        <figure>
-          <img src="images/raftinga.jpg" alt="Happy rafters on the river" width="200">
-          <figcaption>happy rafters on the river</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rapids.jpg" alt="Founding friends of the company" width="200">
-          <figcaption>Founding friends of the company</figcaption>
-        </figure>
-        <figure>
-          <img src="images/ratfng.jpg" alt="best of adventurer" width="200">
-          <figcaption>best of history</figcaption>
-        </figure>
       </div>
+    </section>
+
+    <!-- CONTACT FORM - EXACTA AL WIREFRAME -->
+    <section class="contact-form-section">
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Placeholder" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Placeholder" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label>Message Purpose</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="purpose" value="general"> O General Inquiry
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="purpose" value="reservation"> O Reservation Question
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="purpose" value="suggestion"> O Website Suggestion
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Type here" rows="5"
+              required></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label class="checkbox-label">
+              <input type="checkbox" name="newsletter"> ☑ Please Subscribe me to the monthly
+              newsletter
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group full-width">
+            <button type="submit" class="submit-btn">Get in Touch!</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- SERVICE MESSAGE - EXACTO AL WIREFRAME -->
+    <section class="service-message-section">
+      <h2>We Are Here to Serve You</h2>
     </section>
   </main>
 
+  <!-- FOOTER CORREGIDO con redes a la derecha -->
   <footer>
-    <p>© 2026 Venezuela Rafting Experience - Antonio Zabala</p>
-    <nav class="socialmedia">
+    <p>© 2026 Venezuela Rafting Experience - Antonio Zabala. All rights reserved.</p>
+    <nav class="social-links">
       <a href="https://facebook.com" target="_blank">
-        <img src="images/facebook_3488299.png" alt="Facebook" width="30">
+        <img src="images/facebook-icon.svg" alt="Facebook" width="30" height="30">
       </a>
       <a href="https://instagram.com" target="_blank">
-        <img src="images/camera_14715310.png" alt="Instagram" width="30">
+        <img src="images/instagram-icon.svg" alt="Instagram" width="30" height="30">
       </a>
       <a href="https://twitter.com" target="_blank">
-        <img src="images/twitter-logo_4096075.png" alt="Twitter" width="30">
+        <img src="images/twitter-icon.svg" alt="Twitter" width="30" height="30">
       </a>
     </nav>
   </footer>
