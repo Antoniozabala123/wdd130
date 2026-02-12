@@ -24,14 +24,14 @@
   </header>
 
   <main>
-    <h1>White Water Rafting Company</h1>
+    <h1>Venezuela Rafting Experience</h1>
     <!-- COMPANY INFORMATION - EXACTO AL WIREFRAME -->
     <section class="company-info-section">
 
       <div class="company-details">
         <address>
           <p>123 Main River Street</p>
-          <p>Kolob, California</p>
+          <p>Yaracuy,Venezuela</p>
           <p>+1 999 999 9999</p>
           <p>info@whitewater.com</p>
         </address>
@@ -40,6 +40,8 @@
 
     <!-- CONTACT FORM - EXACTA AL WIREFRAME -->
     <section class="contact-form-section">
+      <h2>Contact Us</h2> <!-- Added heading to fix section warning -->
+
       <form class="contact-form">
         <div class="form-row">
           <div class="form-group">
@@ -56,14 +58,18 @@
           <div class="form-group full-width">
             <label>Message Purpose</label>
             <div class="radio-group">
-              <label class="radio-label">
-                <input type="radio" name="purpose" value="general"> O General Inquiry
+              <label class="radio-label" for="purpose-general">
+                <input type="radio" id="purpose-general" name="purpose" value="general"> O General
+                Inquiry
               </label>
-              <label class="radio-label">
-                <input type="radio" name="purpose" value="reservation"> O Reservation Question
+              <label class="radio-label" for="purpose-reservation">
+                <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> O
+                Reservation Question
               </label>
-              <label class="radio-label">
-                <input type="radio" name="purpose" value="suggestion"> O Website Suggestion
+              <label class="radio-label" for="purpose-suggestion">
+                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> O
+                Website
+                Suggestion
               </label>
             </div>
           </div>
@@ -79,9 +85,9 @@
 
         <div class="form-row">
           <div class="form-group full-width">
-            <label class="checkbox-label">
-              <input type="checkbox" name="newsletter"> ☑ Please Subscribe me to the monthly
-              newsletter
+            <label class="checkbox-label" for="newsletter">
+              <input type="checkbox" id="newsletter" name="newsletter"> ☑ Please Subscribe me to the
+              monthly newsletter
             </label>
           </div>
         </div>
@@ -91,15 +97,16 @@
             <button type="submit" class="submit-btn">Get in Touch!</button>
           </div>
         </div>
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15916.413859902128!2d-66.51948394780453!3d4.200021058489815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de0f0be0cb95009%3A0x6cc08e1798c57ec4!2sYacuaray%207101%2C%20Amazonas!5e0!3m2!1ses!2sve!4v1770749516120!5m2!1ses!2sve"
-            width="600" height="300" allowfullscreen="" loading="lazy">
-          </iframe>
-        </div>
       </form>
-    </section>
 
+      <!-- Map container moved OUTSIDE the form -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15916.413859902128!2d-66.51948394780453!3d4.200021058489815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de0f0be0cb95009%3A0x6cc08e1798c57ec4!2sYacuaray%207101%2C%20Amazonas!5e0!3m2!1ses!2sve!4v1770749516120!5m2!1ses!2sve"
+          width="600" height="300" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </section>
     <!-- SERVICE MESSAGE - EXACTO AL WIREFRAME -->
     <section class="service-message-section">
       <h2>We Are Here to Serve You</h2>
