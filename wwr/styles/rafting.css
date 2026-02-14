@@ -258,3 +258,17 @@ footer p {
 .company p {
     text-align: center;
 }
+
+.company {
+    max-width: 840px;
+    /* Consistente con el resto de tu sitio */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Centra los títulos y párrafos iniciales */
+}
+
+.company h1 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
