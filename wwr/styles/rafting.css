@@ -279,7 +279,7 @@ footer p {
 }
 
 /* Asegurar que el mapa sea responsivo */
-.map-container iframe {
+.map-container {
     width: 100%;
     height: 400px;
     /* Ajusta la altura a tu gusto */
@@ -328,4 +328,51 @@ textarea {
 
 .submit-btn:hover {
     background-color: var(--accent1-color);
+}
+
+.employee-profiles {
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.employee-profiles h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 2.2em;
+    margin-bottom: var(--spacing-lg);
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.employee-grid figure {
+    margin: 0;
+    background: var(--text-light);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.employee-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.employee-grid figcaption {
+    padding: 15px;
+    text-align: center;
+    color: var(--accent1-color);
+}
+
+.employee-grid strong {
+    display: block;
+    color: var(--primary-color);
+    font-size: 1.1em;
 }

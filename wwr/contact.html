@@ -27,100 +27,124 @@
   </header>
 
   <main>
+    <!-- 1. COMPANY INFO + MAPA en DOS COLUMNAS -->
+    <section class="company-info">
+      <h1>Contact Venezuela Rafting Experience</h1>
 
-    <section class="company">
-      <h1>Contact venezuela rafting experience</h1>
-      <p> 123 Main river street</p>
-      <p>AV. Rio santo domingo</p>
-      <p>+58 999 999 9999</p>
-      <p>info@whitewater.com</p>
-
-      <form class="contact-form">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Placeholder" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Placeholder" required>
-          </div>
+      <div class="contact-container">
+        <!-- Columna Izquierda: Datos de contacto -->
+        <div class="info-column">
+          <p>123 Main river street</p>
+          <p>AV. Rio santo domingo</p>
+          <p>+58 999 999 9999</p>
+          <p>info@whitewater.com</p>
         </div>
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Placeholder" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Placeholder" required>
+            </div>
+          </div>
 
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label>Message Purpose</label>
-            <div class="radio-group">
-              <label class="radio-label" for="purpose-general">
-                <input type="radio" id="purpose-general" name="purpose" value="general"> General
-                Inquiry
-              </label>
-              <label class="radio-label" for="purpose-reservation">
-                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
-                Reservation Question
-              </label>
-              <label class="radio-label" for="purpose-suggestion">
-                <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
-                Website
-                Suggestion
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label>Message Purpose</label>
+              <div class="radio-group">
+                <label class="radio-label" for="purpose-general">
+                  <input type="radio" id="purpose-general" name="purpose" value="general"> General
+                  Inquiry
+                </label>
+                <label class="radio-label" for="purpose-reservation">
+                  <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> O
+                  Reservation Question
+                </label>
+                <label class="radio-label" for="purpose-suggestion">
+                  <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> O
+                  Website
+                  Suggestion
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Type here" rows="5"
+                required></textarea>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label class="checkbox-label" for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter"> Please Subscribe me to
+                the
+                monthly newsletter
               </label>
             </div>
           </div>
-        </div>
 
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Type here" rows="5"
-              required></textarea>
+          <div class="form-row">
+            <div class="form-group full-width">
+              <button type="submit" class="submit-btn">Get in Touch!</button>
+            </div>
           </div>
+        </form>
+
+
+        <!-- Columna Derecha: Mapa -->
+        <div class="map-column">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15916.413859902128!2d-66.51948394780453!3d4.200021058489815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de0f0be0cb95009%3A0x6cc08e1798c57ec4!2sYacuaray%207101%2C%20Amazonas!5e0!3m2!1ses!2sve!4v1770749516120!5m2!1ses!2sve"
+            width="600" height="300" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label class="checkbox-label" for="newsletter">
-              <input type="checkbox" id="newsletter" name="newsletter"> Please Subscribe me to the
-              monthly newsletter
-            </label>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group full-width">
-            <button type="submit" class="submit-btn">Get in Touch!</button>
-          </div>
-        </div>
-      </form>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15916.413859902128!2d-66.51948394780453!3d4.200021058489815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8de0f0be0cb95009%3A0x6cc08e1798c57ec4!2sYacuaray%207101%2C%20Amazonas!5e0!3m2!1ses!2sve!4v1770749516120!5m2!1ses!2sve"
-          width="600" height="300" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-
-
-    </section>
-
-    <!-- ADVENTURES SECTION - AHORA FUERA DEL HERO -->
-    <section class="adventures-section">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventures-grid">
-        <figure>
-          <img src="images/frank_rietsch.jpg" alt="Rafting through Los Dientes del Diablo rapids">
-          <figcaption>employe </figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/frank_rietsch.jpg" alt="employe">
-          <figcaption>employe</figcaption>
-        </figure>
-
-        <figure>
-          <img src="images/frank_rietsch.jpg" alt="employe">
-          <figcaption>employe</figcaption>
-        </figure>
       </div>
     </section>
+
+    <!-- 2. EMPLOYEE PROFILES - 3 imágenes DIFERENTES -->
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="employee-grid">
+        <!-- 3 figuras con imágenes DIFERENTES -->
+      </div>
+    </section>
+
+    <!-- 3. CONTACT FORM -->
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <!-- tu formulario -->
+    </section>
+  </main>
+
+
+  </section>
+
+  <!-- ADVENTURES SECTION - AHORA FUERA DEL HERO -->
+  <section class="adventures-section">
+    <h2>Adventure Awaits You!</h2>
+    <div class="employee-grid">
+      <figure>
+        <img src="images/frank_rietsch.jpg" alt="Carlos Rodríguez - Head Guide">
+        <figcaption><strong>Carlos Rodríguez</strong> - Head Guide</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/michille.jpg" alt="María González - Safety Officer">
+        <figcaption><strong>María González</strong> - Safety Officer</figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/frank_rojito.jpg" alt="José Hernández - Senior Guide">
+        <figcaption><strong>José Hernández</strong> - Senior Guide</figcaption>
+      </figure>
+    </div>
+  </section>
   </main>
 
   <footer>
