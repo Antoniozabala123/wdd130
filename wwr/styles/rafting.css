@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -46,6 +46,6 @@ header {
     grid-template-columns: 120px 1fr;
     /* El logo ocupa 120px, el resto el menú */
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
     padding: 10px 10px;
 }
