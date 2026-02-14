@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #0077b6;
+    /* Azul río */
+    --secondary-color: #caf0f8;
+    /* Azul claro/agua */
+    --accent1-color: #023e8a;
+    /* Azul oscuro profundo */
+    --accent2-color: #fb8500;
+    /* Naranja (contraste para botones/acentos) */
+    --heading-font: "Georgia", serif;
+    --body-font: "Helvetica", "Arial", sans-serif;
+}
+
+/* Reset del Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+    /* Mejora la lectura */
+}
+
+/* Centrar el contenido y limitar el ancho */
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Quitar subrayado a las imágenes de redes sociales en el footer */
+.socialmedia a {
+    text-decoration: none;
+}
+
+/* Contenedor principal del Hero */
+.hero {
+    position: relative;
+}
+
+/* La imagen de fondo del Hero */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* El título H1 sobre la imagen */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(2, 62, 138, 0.7);
+    /* Azul oscuro con transparencia */
+    color: white;
+}
+
+/* El artículo sobre la imagen */
+.hero article {
+    position: absolute;
+    top: 120px;
+    /* Ajusta esto según el tamaño de tu imagen */
+    left: 50px;
+    right: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Blanco transparente */
+    padding: 20px;
+}
+
+/* La imagen pequeña dentro del artículo del Hero */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 15px;
+    border: 2px solid var(--primary-color);
+}
