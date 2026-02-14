@@ -47,5 +47,65 @@ header {
     /* El logo ocupa 120px, el resto el menú */
     align-items: center;
     background-color: var(--accent1-color);
-    padding: 10px 10px;
+    padding: 10px 20px;
+}
+
+/* 1. El contenedor principal */
+.hero {
+    position: relative;
+    display: block;
+    /* Asegura que se comporte como un bloque */
+}
+
+/* Estilo para la imagen de fondo del hero */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 2. El título encima de la imagen */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--primary-color);
+    /* Azul oscuro con opacidad */
+    color: var(--secondary-color);
+    /* Usamos la variable para contraste */
+    font-family: var(--heading-font);
+}
+
+/* 3. El cuadro de texto (article) encima de la imagen */
+.hero article {
+    position: absolute;
+    top: 350px;
+    /* Lo bajamos para que no tape al h1 */
+    left: 10%;
+    right: 10%;
+    background-color: var(--secondary-color);
+    /* Fondo blanco traslúcido */
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+/* 4. La imagen pequeña dentro del artículo */
+.hero article img {
+    float: right;
+    width: 150px;
+    /* Tamaño pequeño */
+    height: auto;
+    margin-left: 15px;
+    /* Espacio para que el texto no pegue a la imagen */
+    border-radius: 5px;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
