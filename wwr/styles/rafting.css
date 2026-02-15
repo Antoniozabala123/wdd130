@@ -22,7 +22,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: var(--text-light);
+    background-color: var(--accent1-color);
 }
 
 /* HEADER */
