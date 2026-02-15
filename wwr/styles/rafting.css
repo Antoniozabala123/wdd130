@@ -1,8 +1,12 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --primary-color: #2453a7;
+    /* Azul principal - botones, enlaces */
+    --secondary-color: #0976b4;
+    /* Azul secundario - hovers */
+    --accent1-color: #1d1d1e;
+    /* Casi negro - headers, footers */
+    --accent2-color: #f9d356;
+    /* Amarillo - acentos, llamadas */
     --heading-font: "Times New Roman", Georgia, serif;
     --body-font: Helvetica, Arial, sans-serif;
     --spacing-lg: 40px;
@@ -13,4 +17,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10 10px;
+    background-color: var(--text-light);
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 10px 20px;
+    width: 100%;
+    color: var(--text-light);
+}
+
+.logo img {
+    display: block;
+    height: auto;
+}
+
+/* NAV */
+nav {
+    justify-self: end;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
