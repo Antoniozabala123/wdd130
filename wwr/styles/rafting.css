@@ -17,12 +17,12 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--text-light);
+    color: var(--accent1-color);
     line-height: 1.6;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color: var(--accent1-color);
+    background-color: var(--text-light);
 }
 
 /* HEADER */
