@@ -17,7 +17,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--accent2-color);
     line-height: 1.6;
     max-width: 1200px;
     margin: 0 auto;
@@ -30,7 +30,7 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: var(--primary-color);
+    background-color: var(--accent1-color);
     padding: 10px 20px;
     width: 100%;
 }
