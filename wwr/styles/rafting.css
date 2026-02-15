@@ -334,6 +334,7 @@ textarea {
 .employee-profiles {
     margin: 60px auto;
     padding: 0 20px;
+    color: var(--text-light);
 }
 
 .employee-profiles h2 {
