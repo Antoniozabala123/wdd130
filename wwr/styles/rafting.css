@@ -128,7 +128,7 @@ nav a:hover {
     text-align: center;
     padding: 16px;
     margin: 0;
-    background-color: var(--bg-color);
+    background-color: var(--accent1-color);
     /* semi-transparente para legibilidad */
     color: #fff;
     font-weight: 700;
