@@ -1,19 +1,250 @@
-:root {
-    --primary-color: #2453a7;
-    /* Azul principal - botones, enlaces */
-    --secondary-color: #0976b4;
-    /* Azul secundario - hovers */
-    --accent1-color: #1d1d1e;
-    /* Casi negro - headers, footers */
-    --accent2-color: #f9d356;
-    /* Amarillo - acentos, llamadas */
+* 1) Reset y variables en :root */:root {
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
     --heading-font: "Times New Roman", Georgia, serif;
-    --body-font: Helvetica, Arial, sans-serif;
-    --text-light: #ffffff;
+    --body-font: Arial, Helvetica, sans-serif;
+    --text-color: #1f1f1f;
+    --bg-color: #ffffff;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* 2) Base del documento */
+html,
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    height: 100%;
+}
+
+/* 3) Tamaño máximo y robotica de la página (limitando ancho) */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* 4) Enlaces sociales en footer sin subrayado */
+.socialmedia a {
+    text-decoration: none;
+}
+
+footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0 40px;
+}
+
+footer nav.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+footer nav.socialmedia a img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+/* 5) Tipografía para headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* 6) Navegación general */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* 7) Hero con overlay (relativo) y título absoluto */
+.hero {
+    position: relative;
+    padding: 0;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+    background-color: rgba(38, 70, 99, 0.75);
+    /* semi-transparente para legibilidad */
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.hero article {
+    position: absolute;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 42%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero article img {
+    float: right;
+    width: 40%;
+    margin-left: 12px;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+    .hero article {
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-top: 12px;
+    }
+
+    .hero article img {
+        float: none;
+        width: 40%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 0 0 8px;
+    }
+
+    .hero h1 {
+        position: static;
+        background: none;
+        padding: 0;
+        margin: 0 0 8px;
+        text-align: center;
+    }
+}
+
+/* 8) History y Adventures (estructura de grid sencillo) */
+.history-section {
+    padding: 40px 0;
+}
+
+.history-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 320px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.left-text,
+.right-text {
+    font-size: 1rem;
+}
+
+.history-image img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .history-content {
+        grid-template-columns: 1fr;
+    }
+
+    .history-image {
+        order: -1;
+    }
+}
+
+.adventures-section {
+    padding: 40px 0;
+}
+
+.adventures-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+.adventures-grid figure {
+    margin: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f6f6f6;
+}
+
+.adventures-grid figure img {
+    width: 100%;
+    display: block;
+}
+
+.adventures-grid figcaption {
+    padding: 8px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* 9) Tipografía del cuerpo y color de texto (ya aplicado arriba) */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
 }
