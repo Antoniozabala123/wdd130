@@ -297,3 +297,40 @@ textarea {
     text-align: center;
     color: var(--accent1-color);
 }
+
+.trips h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-btn {
+    background: var(--accent2-color);
+    color: var(--text-color);
+    border: none;
+    padding: 15px 45px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 15px var(--accent1-color);
+    margin-top: 20px;
+}
+
+.Reservation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
