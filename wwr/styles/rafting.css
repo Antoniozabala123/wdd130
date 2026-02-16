@@ -1,4 +1,4 @@
-* 1) Reset y variables en :root */:root {
+:root {
     --primary-color: #055a05;
     /* forest green */
     --secondary-color: #f4a261;
@@ -155,31 +155,6 @@ nav a:hover {
     border-radius: 6px;
 }
 
-@media (max-width: 900px) {
-    .hero article {
-        position: static;
-        width: 100%;
-        transform: none;
-        margin-top: 12px;
-    }
-
-    .hero article img {
-        float: none;
-        width: 40%;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 0 0 8px;
-    }
-
-    .hero h1 {
-        position: static;
-        background: none;
-        padding: 0;
-        margin: 0 0 8px;
-        text-align: center;
-    }
-}
-
 /* 8) History y Adventures (estructura de grid sencillo) */
 .history-section {
     padding: 40px 0;
@@ -206,16 +181,6 @@ nav a:hover {
     width: 100%;
     border-radius: 6px;
     display: block;
-}
-
-@media (max-width: 900px) {
-    .history-content {
-        grid-template-columns: 1fr;
-    }
-
-    .history-image {
-        order: -1;
-    }
 }
 
 .adventures-section {
