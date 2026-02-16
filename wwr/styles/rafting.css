@@ -73,7 +73,7 @@ footer nav.socialmedia a img {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--text-color);
 }
 
 h1 {
