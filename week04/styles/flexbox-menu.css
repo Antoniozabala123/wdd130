@@ -1,20 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 1rem;
+    font-family: "Sansita", sans-serif;
+}
+
+h1 {
+    background-color: #ddd;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    font-size: 2rem;
+    text-align: center;
 }
 
 nav {
     background-color: #36454f;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
 }
 
 nav a {
@@ -25,31 +34,23 @@ nav a {
     text-decoration: none;
 }
 
-p {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
-    background-color: #bed;
-    max-width: 400px;
+nav a:hover {
+    text-decoration: overline;
 }
 
-#devtools-btn {
-    background-color: #36454f;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    margin: 1rem;
-    font-size: 16px;
-    font-family: Helvetica, Arial, sans-serif;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.active {
+    color: yellow;
 }
 
-#devtools-btn:hover {
-    background-color: #4a5a6a;
-}
+/* larger/wider views **************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
 
-#devtools-btn:active {
-    background-color: #2a3a4a;
-}
+    nav ul li {
+        flex: 1 0 auto;
+        /* flex: [flex-grow] [flex-shrink] [flex-basis]; 
+		in this example, the items will not shrink but can grow to fill the space at natural content width*/
+
+    }
